@@ -89,6 +89,10 @@ a.signUp{
     /*display: inline-block;
     manter inline, mas colocar como bloco*/
 }
+section.banner img{
+    width: 80%;
+    max-width: 800px;
+}
 /*====================================================================
                                 Conteúdo - Parte 1
 ====================================================================*/
@@ -245,3 +249,100 @@ footer h2{
 footer p.pFooter{
     margin: 0 0 0 10vw;
 }
+
+/*====================================================================
+                                Responsividade
+====================================================================*/
+@media (max-width: 600px) {
+    header{
+      display: block;
+      text-align: center;
+    }
+    header h1{
+        margin: 5vw;
+    }
+    header nav ul li{
+        width: 50%;
+        margin: 2vw 0;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+        /* chegou no limite ele cai */
+        justify-content: center;
+    }
+    .banner img{
+        margin: 15vw 0 0vw 0;
+    }
+    .banner p {
+        line-height: 20px;
+        margin: 5vw 0 ;
+    }
+
+
+    main section.products {
+        padding: 1px 16vw 10px 16vw;
+    }
+    section.products div ul.productsSuperiores {
+        display: block;
+    }
+
+    main section.products div ul.productsSuperiores li {
+        width: 73%;
+    }
+
+    main section div ul li {
+        margin: 0 0 2vw 0 ;
+    }
+    main section.build h2 {
+        margin: 1.5vw 0 7vw 0;
+    }
+    main section.build p.pTitulo {
+        margin: 0 10vw 7vw 10vw;
+    }
+
+
+
+
+
+    main section.build div.number div img {
+        width: 90%;
+        margin: 0 0 0 0vw;
+    }
+
+    main section.build div.number {
+        display: block;
+        
+    }
+    main section.build div.number div.h3{
+        text-align: center;
+    }
+    
+    
+    
+
+    footer {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    footer ul{
+        margin: 2vw 0;
+    }
+    footer ul li {
+        width: 40%;
+        margin: 1.5vw;
+    }
+    footer nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer h2{
+        margin: 2vw 4vw 2vw 4vw;
+        padding: 15px 0 0 0;
+    }
+    footer p.pFooter{
+        margin: 0 0 0 0;
+    }
+    
+    
+  }
